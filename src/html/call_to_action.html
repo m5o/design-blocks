@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Froala Design Blocks - Call to Action</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <script src="http://localhost:35729/livereload.js"></script>
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+  <style>
+      .fdb-block {
+        padding:100px 0;        
+        border-bottom: solid 1px black;
+      }    
+      .fdb-block-bg-c1 {
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzAwMCAyMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZGVmcz4KPHN0eWxlPi5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNkKTsKICAgICAgfQogICAgICAuY2xzLTIsIC5jbHMtMywgLmNscy00IHsKICAgICAgICBmaWxsLXJ1bGU6IGV2ZW5vZGQ7CiAgICAgIH0KICAgICAgLmNscy0yIHsKICAgICAgICBmaWxsOiB1cmwoI2MpOwogICAgICB9CiAgICAgIC5jbHMtMyB7CiAgICAgICAgZmlsbDogdXJsKCNiKTsKICAgICAgfQogICAgICAuY2xzLTQgewogICAgICAgIGZpbGw6IHVybCgjYSk7CiAgICAgIH08L3N0eWxlPgo8bGluZWFyR3JhZGllbnQgaWQ9ImQiIHgxPSItMjAiIHgyPSIzMDE2IiB5MT0iOTk5IiB5Mj0iOTk5IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiNmZTc0YjYiIG9mZnNldD0iMCIvPgo8c3RvcCBzdG9wLWNvbG9yPSIjZmFkMTY4IiBvZmZzZXQ9IjEiLz4KPC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJjIiB4MT0iLTMuNjU2IiB4Mj0iMzAxOS40IiB5MT0iMTMwMyIgeTI9IjEzMDMiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzhjNTNmZSIgb2Zmc2V0PSIwIi8+CjxzdG9wIHN0b3AtY29sb3I9IiM0YWEzZmQiIG9mZnNldD0iLjkxIi8+CjxzdG9wIHN0b3AtY29sb3I9IiM0YWEzZmQiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSItNC40MDYiIHgyPSIzMDE5LjMiIHkxPSIxMzc4LjgiIHkyPSIxMzc4LjgiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzJiZjg5OCIgb2Zmc2V0PSIwIi8+CjxzdG9wIHN0b3AtY29sb3I9IiMzYWNhZmUiIG9mZnNldD0iLjU4OCIvPgo8c3RvcCBzdG9wLWNvbG9yPSIjZTE5M2ZmIiBvZmZzZXQ9IjEiLz4KPC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iLTUuMjE5IiB4Mj0iMzAyMC44IiB5MT0iMTUwMS43IiB5Mj0iMTUwMS43IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiMyZDg0YzMiIG9mZnNldD0iMCIvPgo8c3RvcCBzdG9wLWNvbG9yPSIjNzY0YmEwIiBvZmZzZXQ9Ii40NzIiLz4KPHN0b3Agc3RvcC1jb2xvcj0iI2NhNDJhNyIgb2Zmc2V0PSIxIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPHJlY3QgY2xhc3M9ImNscy0xIiB4PSItMjAiIHk9Ii0xNiIgd2lkdGg9IjMwMzYiIGhlaWdodD0iMjAzMCIvPgo8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Im0wIDE5MzBjMzc0Ljg1LTM4NS4yOSA0ODYuMDUtMzA4LjA2IDc1MC0yODMgNDY5LjM5IDQ0LjU2IDQ3NS4yMS0yNzguOTUgNzIxLjQzLTI4Ni42MSAyNDYuNC03LjY4IDQ1MC41MSAxNjQuOTEgNjE1LjU3LTgxLjM5IDEzNS42NC0yMDIuMzkgMjI3LjU1LTIwNy4zNCA0NjMtMjI0IDI1My41Mi0xNy45NCAzOTkuOTgtMjUzLjQxIDQ0OC00MzdzMCAxMzg1IDAgMTM4NWwtMjk5OS0zYzAuNzY2LTAuNTgtNy4wMjEtMzAuNTkgMS03MHoiIGRhdGEtbmFtZT0iR3JhZGllbnQgRmlsbCAxIi8+CjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0ibS0xIDE5NDdjMzc1LjM2LTIxNS4xMyA0NjUuMzMtMTg4Ljc5IDczMC0xNzMgNDcxLjM5IDI4LjEyIDUzMS4yNi0yNTYuMTUgNzc3LTIzOSAzMzAuNDggMjMuMDcgNDM1LjE4IDEwOS42NCA2NzktMTkxIDkxLjIyLTExMi40OCAxOTguMDItODIuMzggNDMwLTEyNiAyNDMuMTYtNDUuNzIgMzM0Ljk4LTI2My40MSAzODMtNDQ3czAgMTIzMiAwIDEyMzJsLTI5OTktM2MwLjc2Ni0wLjU4LTguMDIxLTEzLjU5IDAtNTN6IiBkYXRhLW5hbWU9IkdyYWRpZW50IEZpbGwgMiIvPgo8cGF0aCBjbGFzcz0iY2xzLTQiIGQ9Im0tMiAxOTcyYzM0Ny4xNC0xNTguNiA1MjAuOS04My44MSA3ODMtNjggNjkwLjk5IDQxLjY5IDYwOS4yNy0yNDIgODQ5LTI0MiAyNzAuNjEgMCAzODIuNjggMjE5LjkgNTk0LTYwIDIwMS4wOS0yNjYuMzUgMjU0LjkxLTIyNi44IDU1NS0yODkgMTAyLjMyLTIxLjIxIDE3Mi45OC0xMDkuNDEgMjIxLTI5M3MtMiA5ODMtMiA5ODNsLTI5OTktM2MwLjc2Ni0wLjU4LTkuMDIxIDExLjQxLTEtMjh6IiBkYXRhLW5hbWU9IkdyYWRpZW50IEZpbGwgMyIvPgo8L3N2Zz4=");
+        background-position:center;
+        background-size:cover;
+      }
+      .fdb-block-bg-b1 {
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzAwMCAyMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZGVmcz4KPHN0eWxlPi5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNhKTsKICAgICAgfQogICAgICAuY2xzLTIsIC5jbHMtMyB7CiAgICAgICAgZmlsbDogI2ZmZjsKICAgICAgICBmaWxsLXJ1bGU6IGV2ZW5vZGQ7CiAgICAgIH0KICAgICAgLmNscy0yIHsKICAgICAgICBvcGFjaXR5OiAwLjI1OwogICAgICB9CiAgICAgIC5jbHMtMyB7CiAgICAgICAgb3BhY2l0eTogMC4yOwogICAgICB9PC9zdHlsZT4KPGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMTQ5NSIgeDI9IjE0OTUiIHkxPSIyMDE4IiB5Mj0iLTMxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM0OGM2ZWYiIG9mZnNldD0iMCIvPgo8c3RvcCBzdG9wLWNvbG9yPSIjNmY4NmQ2IiBvZmZzZXQ9IjEiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8cmVjdCBjbGFzcz0iY2xzLTEiIHg9Ii0zOCIgeT0iLTMxIiB3aWR0aD0iMzA2NiIgaGVpZ2h0PSIyMDQ5Ii8+CjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0ibS01MyAxMTQ4Yzc5LjE4NS02NC4wNyAyMjcuODggNTkuNCAyODggMjUgODU5LjI5LTQ5MS43NiA3NjcuNjYgMTguMTkgMTAwNi03MiAzMDkuODQtMTE3LjI1IDQwMy41NyAyMDMuNzUgNzcwIDc5IDI1NC44OS04Ni43OCA3NDEuNDgtMzUzLjIgOTg5LTI5MyAxMDcuNzEgMjYuMiAwIDEzMDAgMCAxMzAwaC0zMDAyYzAuNzY1LTAuNTgtNTkuMDIxLTk5OS41OS01MS0xMDM5eiIgZGF0YS1uYW1lPSJDb2xvciBGaWxsIDEiLz4KPHBhdGggY2xhc3M9ImNscy0zIiBkPSJtLTIgODQwYzQ1Ny43NSAxNC42NzIgNTUxLjEgMjc4LjQ2IDgyMCAyNjEgMjUzLjUxLTE2LjQ2IDQzNC43MS0xODEuNTUgNjg5LTE2NSAzMjguMTQgMjEuMzYgNDEzLjEgNzIuMDEgODAwIDg0IDU5Ny40OSAxOC41MSA1OTkuMjgtNjEuOTU5IDY5NC0xMDIgMTcyLjk0LTczLjEwOSAwIDEyNjkgMCAxMjY5bC0zMDA2LTZjMC43NjYtMC41OC01LjAyMS0xMzAxLjYgMy0xMzQxeiIgZGF0YS1uYW1lPSJDb2xvciBGaWxsIDIiLz4KPC9zdmc+");
+        background-position:center;
+        background-size:cover;
+      }      
+      .fdb-block-bg-wide-2 {
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzAwMCAyMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZGVmcz4KPHN0eWxlPi5jbHMtMSB7CiAgICAgICAgZmlsbDogI2ZmZjsKICAgICAgfQogICAgICAuY2xzLTIsIC5jbHMtMywgLmNscy00IHsKICAgICAgICBmaWxsLXJ1bGU6IGV2ZW5vZGQ7CiAgICAgIH0KICAgICAgLmNscy0yIHsKICAgICAgICBmaWxsOiB1cmwoI2MpOwogICAgICB9CiAgICAgIC5jbHMtMyB7CiAgICAgICAgZmlsbDogdXJsKCNiKTsKICAgICAgfQogICAgICAuY2xzLTQgewogICAgICAgIGZpbGw6IHVybCgjYSk7CiAgICAgIH08L3N0eWxlPgo8bGluZWFyR3JhZGllbnQgaWQ9ImMiIHgxPSItNC40MDYiIHgyPSIzMDIxLjgiIHkxPSIxMTI5LjkiIHkyPSIxMTI5LjkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iI2ZhNzE5OSIgb2Zmc2V0PSIwIi8+CjxzdG9wIHN0b3AtY29sb3I9IiNmZWUxNDAiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSItMy42ODgiIHgyPSIzMDE3LjIiIHkxPSIxMTYxIiB5Mj0iMTE2MSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjNGU2YWIzIiBvZmZzZXQ9IjAiLz4KPHN0b3Agc3RvcC1jb2xvcj0iI2M0NDJhNiIgb2Zmc2V0PSIxIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9Ii0zLjY1NiIgeDI9IjMwMDQiIHkxPSIxMzMzIiB5Mj0iMTMzMyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMDA5MmU4IiBvZmZzZXQ9IjAiLz4KPHN0b3Agc3RvcC1jb2xvcj0iIzgwZDBjNyIgb2Zmc2V0PSIxIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPHJlY3QgY2xhc3M9ImNscy0xIiB4PSItNDEiIHk9Ii0zNiIgd2lkdGg9IjMwOTMiIGhlaWdodD0iMjA3NCIvPgo8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Im0yOTk5IDI1M2M1MS45Ni0xODIuNTEtMSAxNzUwLTEgMTc1MGwtMjk5OS0zYzAuNzY2LTAuNTgtOC4wMjEgNDEuNDEgMCAyIDQ0Mi4wNC03MDIuMzYgNzYxLjA1LTM5NC4wNiAxMDI1LTM2OSA0NjkuMzkgNDQuNTYgNDA0Ljc4LTMxNi4xOCA2NTEtMzI0IDMxNC4xLTkuOTcgMjI5LjQxLTE3My4xIDUxMy0zODkgMzcwLjA2LTI4MS43MiA2NjYuNjktMTYwLjE0IDgxMS02Njd6IiBkYXRhLW5hbWU9IkdyYWRpZW50IEZpbGwgMSIvPgo8cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Im0yNzQ4IDc5M2MxNzQuMTktNzkuMDU5IDIxNy42OS0zMTQuMzQgMjUyLTQ3NCAzOS44Ny0xODUuNTMtMiAxNjg0LTIgMTY4NGwtMjk5OS0zYzAuNzY2LTAuNTgtNy4wMjEgMzcuNDEgMS0yIDM2OS40NC0zMTAuOTggNDg5Ljg4LTMwNS41NyA4NTgtMjIxIDQzMS4zNCA5OS4wOSAzOTcuNTQtMTI5LjM5IDYzMi43OC0xNjAuMzggNTE0LjItNjcuNzMgMjM4LjY3LTE0OC44MyA2ODYuMjItMzU1LjYyIDM0NC44LTE1OS4zMiAxMDIuMDUtMjU1LjE2IDU3MS00Njh6IiBkYXRhLW5hbWU9IkdyYWRpZW50IEZpbGwgMiIvPgo8cGF0aCBjbGFzcz0iY2xzLTQiIGQ9Im0wIDJlM2M1MzcuOTgtMjkwLjM5IDY3NS45Mi0xNTQuODggOTI1LTkzIDQwNC4zNiAxMDAuNDUgMjg2Ljk2LTk5LjM1IDUyMS0xNDQgMTkwLjk2LTM2LjQ0IDM2OS45NSA3OS42NSA2MDUtMTY5IDE2NC4zMi0xNzMuODMgMzA4LjQxLTM3LjM1IDQwOS0xNzYgMTAwLjM2LTEzOC4zNCA1LjI0LTMwNy43NiAyMTktMzgzIDI5MS43OS0xMDIuNzEgMzE2LjUzLTI0Mi4yNyAzMjItMzcwIDguMTItMTg5LjU5LTMgMTMzOC0zIDEzMzhsLTI5OTktM2MwLjc2Ni0wLjU4LTcuMDIxIDM5LjQxIDEgMHoiIGRhdGEtbmFtZT0iR3JhZGllbnQgRmlsbCAzIi8+Cjwvc3ZnPgo=");
+        background-position:center;
+        background-size:cover;              
+      }
+      .fdb-block-bg-dark-0 {
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzAwMCAyMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZGVmcz4KPHN0eWxlPi5jbHMtMSB7CiAgICAgICAgZmlsbDogIzJkMzEzYzsKICAgICAgfQogICAgICAuY2xzLTIsIC5jbHMtMyB7CiAgICAgICAgZmlsbDogI2ZmZjsKICAgICAgICBmaWxsLXJ1bGU6IGV2ZW5vZGQ7CiAgICAgIH0KICAgICAgLmNscy0yIHsKICAgICAgICBvcGFjaXR5OiAwLjE7CiAgICAgIH0KICAgICAgLmNscy0zIHsKICAgICAgICBvcGFjaXR5OiAwLjA1OwogICAgICB9PC9zdHlsZT4KPC9kZWZzPgo8cmVjdCBjbGFzcz0iY2xzLTEiIHg9Ii0zOCIgeT0iLTMxIiB3aWR0aD0iMzA2NiIgaGVpZ2h0PSIyMDQ5Ii8+CjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0ibS01MyAxMTQ4Yzc5LjE4NS02NC4wNyAyMjcuODggNTkuNCAyODggMjUgODU5LjI5LTQ5MS43NiA3NjcuNjYgMTguMTkgMTAwNi03MiAzMDkuODQtMTE3LjI1IDQwMy41NyAyMDMuNzUgNzcwIDc5IDI1NC44OS04Ni43OCA3NDEuNDgtMzUzLjIgOTg5LTI5MyAxMDcuNzEgMjYuMiAwIDEzMDAgMCAxMzAwaC0zMDAyYzAuNzY1LTAuNTgtNTkuMDIxLTk5OS41OS01MS0xMDM5eiIgZGF0YS1uYW1lPSJDb2xvciBGaWxsIDEiLz4KPHBhdGggY2xhc3M9ImNscy0zIiBkPSJtLTIgODQwYzQ1Ny43NSAxNC42NzIgNTUxLjEgMjc4LjQ2IDgyMCAyNjEgMjUzLjUxLTE2LjQ2IDQzNC43MS0xODEuNTUgNjg5LTE2NSAzMjguMTQgMjEuMzYgNDEzLjEgNzIuMDEgODAwIDg0IDU5Ny40OSAxOC41MSA1OTkuMjgtNjEuOTU5IDY5NC0xMDIgMTcyLjk0LTczLjEwOSAwIDEyNjkgMCAxMjY5bC0zMDA2LTZjMC43NjYtMC41OC01LjAyMS0xMzAxLjYgMy0xMzQxeiIgZGF0YS1uYW1lPSJDb2xvciBGaWxsIDIiLz4KPC9zdmc+");
+        background-position:center;
+        background-size:cover;                     
+      }
 
-  <link type="text/css" rel="stylesheet" href="./css/froala_blocks.css">
+    </style>  
 </head>
 <body>
-  <section class="fdb-block">
+
+<section class="fdb-block" data-type="cta">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 text-center">
@@ -22,52 +43,52 @@
           </p>
 
           <p class="mt-5 mt-sm-4">
-            <a class="btn btn-primary" href="https://www.froala.com">Download</a>
+            <a class="btn btn-primary" href="#">Button Text</a>
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block">
+  <section class="fdb-block" data-type="cta">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-6 text-center">
-          <h1>Call to Action</h1>
+          <h2 class="h1">Call to Action</h2>
           <p class="lead">
             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts
           </p>
           <p class="mt-5 mt-sm-4">
-            <a class="btn btn-outline-primary" href="https://www.froala.com">Download</a>
+            <a class="btn btn-outline-primary" href="#">Button Text</a>
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block">
+  <section class="fdb-block" data-type="cta">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-sm-8 col-md-6 col-lg-4 text-center">
-          <h3>Right at the coast of the Semantics, a large language ocean. A small river named Duden.</h3>
+          <strong class="h5">Right at the coast of the Semantics, a large language ocean. A small river named Duden.</strong>
           <p class="mt-5 mt-sm-4">
-            <a class="btn btn-primary" href="https://www.froala.com">Download</a>
+            <a class="btn btn-primary" href="#">Button Text</a>
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block">
+  <section class="fdb-block" data-type="cta">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-6 text-center">
-          <h1>Call to Action</h1>
+          <h2 class="h1">Call to Action</h2>
           <p class="lead">
             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts
           </p>
           <p class="mt-5 mt-sm-4">
-            <a class="btn btn-outline-primary" href="https://www.froala.com">Download</a>
+            <a class="btn btn-outline-primary" href="#">Button Text</a>
           </p>
         </div>
       </div>
@@ -79,35 +100,36 @@
       </div>
       <div class="row">
         <div class="col-12 text-center">
-          <i class="mx-3 my-3 fab fa-amazon text-xbrand fa-4x"></i>
-          <i class="mx-3 my-3 fab fa-behance text-xbrand fa-4x"></i>
-          <i class="mx-3 my-3 fab fa-bitcoin text-xbrand fa-4x"></i>
-          <i class="mx-3 my-3 fab fa-dribbble text-xbrand fa-4x"></i>
-          <i class="mx-3 my-3 fab fa-linkedin text-xbrand fa-4x"></i>
-          <i class="mx-3 my-3 fab fa-medium text-xbrand fa-4x"></i>
-          <i class="mx-3 my-3 fab fa-pinterest text-xbrand fa-4x"></i>
-          <i class="mx-3 my-3 fab fa-reddit text-xbrand fa-4x"></i>
-          <i class="mx-3 my-3 fab fa-snapchat text-xbrand fa-4x"></i>
-          <i class="mx-3 my-3 fab fa-whatsapp text-xbrand fa-4x"></i>
+            <img alt="image" src="http://via.placeholder.com/56x64" class="mx-3 my-3">
+            <img alt="image" src="http://via.placeholder.com/56x64" class="mx-3 my-3">
+            <img alt="image" src="http://via.placeholder.com/56x64" class="mx-3 my-3">
+            <img alt="image" src="http://via.placeholder.com/56x64" class="mx-3 my-3">
+            <img alt="image" src="http://via.placeholder.com/56x64" class="mx-3 my-3">
+            <img alt="image" src="http://via.placeholder.com/56x64" class="mx-3 my-3">
+            <img alt="image" src="http://via.placeholder.com/56x64" class="mx-3 my-3">
+            <img alt="image" src="http://via.placeholder.com/56x64" class="mx-3 my-3">
+            <img alt="image" src="http://via.placeholder.com/56x64" class="mx-3 my-3">
+            <img alt="image" src="http://via.placeholder.com/56x64" class="mx-3 my-3">
+            <img alt="image" src="http://via.placeholder.com/56x64" class="mx-3 my-3">
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block">
+  <section class="fdb-block" data-type="cta">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 text-center">
-          <h1>Far far away, behind the word mountains, far from</h1>
+          <h2 class="h1">Non est pede, facere aut esse meritorum, leo eius</h2>
           <p class="mt-5">
-            <a class="btn btn-primary" href="https://www.froala.com">Download</a>
+            <a class="btn btn-primary" href="#">Button Text</a>
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block">
+  <section class="fdb-block" data-type="cta">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-sm-10 col-md-8 col-lg-4 text-center">
@@ -115,55 +137,54 @@
             Follow us and ask more on:
           </p>
           <p>
-            <a href="https://www.froala.com" class="h2 mx-2 text-facebook"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.froala.com" class="h2 mx-2 text-twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.froala.com" class="h2 mx-2 text-instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.froala.com" class="h2 mx-2 text-google"><i class="fab fa-google"></i></a>
-            <a href="https://www.froala.com" class="h2 mx-2 text-pinterest"><i class="fab fa-pinterest"></i></a>
+            <a href="#" class="h2 mx-2 text-facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="h2 mx-2 text-twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="h2 mx-2 text-instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="h2 mx-2 text-google"><i class="fab fa-google"></i></a>
+            <a href="#" class="h2 mx-2 text-pinterest"><i class="fab fa-pinterest"></i></a>
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block">
+  <section class="fdb-block" data-type="cta">
     <div class="container">
       <div class="row text-center pb-0 pb-lg-4">
         <div class="col-12">
-          <h1>Call to action</h1>
+          <h2 class="h1">Call to action</h2>
         </div>
       </div>
       <div class="row text-center pt-4 pt-md-5">
         <div class="col-12 col-sm-10 col-md-6 col-lg-4 m-sm-auto">
-          <img alt="image" height="60" src="./imgs/img_round.svg" class="mb-4">
+          <img alt="image" height="60" src="http://via.placeholder.com/60" class="mb-4">
           <h3>First Action</h3>
           <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-          <p class="mt-3"><a class="btn btn-outline-primary" href="https://www.froala.com">Button</a></p>
+          <p class="mt-3"><a class="btn btn-outline-primary" href="#">Button</a></p>
         </div>
 
         <div class="col-12 col-sm-10 col-md-6 col-lg-4 ml-sm-auto mr-sm-auto mt-5 mt-md-0">
-          <img alt="image" height="60" src="./imgs/img_round.svg" class="mb-4">
+          <img alt="image" height="60" src="http://via.placeholder.com/60" class="mb-4">
           <h3>Second Action</h3>
           <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-          <p class="mt-3"><a class="btn btn-outline-primary" href="https://www.froala.com">Button</a></p>
+          <p class="mt-3"><a class="btn btn-outline-primary" href="#">Button</a></p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block">
-    <img src="./imgs/bg_c_1.svg" alt="Background Image" class="bg-image" />
+  <section class="fdb-block fdb-block-bg-c1">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 text-center">
           <div class="card">
             <div class="card-body p-5">
-              <h1>Call to Action</h1>
+              <h2 class="h1">Call to Action</h2>
               <p class="lead">
                 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts
               </p>
               <p class="mt-4">
-                <a class="btn btn-primary" href="https://www.froala.com">Download</a>
+                <a class="btn btn-primary" href="#">Button Text</a>
               </p>
             </div>
           </div>
@@ -172,32 +193,31 @@
     </div>
   </section>
 
-  <section class="fdb-block">
+  <section class="fdb-block" data-type="cta">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 col-sm-9 text-left">
-          <h2>Use Froala Design Blocks for free in your project</h2>
+          <h2>Sem Potens Doming Doming est ante et modo habetis</h2>
         </div>
         <div class="col-12 col-sm-3 text-left text-sm-center mt-4 mt-sm-0">
-          <a class="btn btn-primary" href="https://www.froala.com"><i class="fas fa-arrow-circle-down mr-2"></i> Download</a>
+          <a class="btn btn-primary" href="#">Button Text</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block pb-0">
-    <img src="./imgs/bg_1.svg" alt="Background Image" class="bg-image" />
-    <div class="container">
+  <section class="fdb-block fdb-block-bg-b1">
+    <div class="container" >
       <div class="row justify-content-end">
         <div class="col-12 col-md-8 col-lg-6 text-center">
           <div class="card rounded-0">
             <div class="card-body p-5">
-              <h1>Call to Action</h1>
+              <h2 class="h1">Call to Action</h2>
               <p class="lead">
                 When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove
               </p>
               <p class="mt-4">
-                <a class="btn btn-primary" href="https://www.froala.com">Download</a>
+                <a class="btn btn-primary" href="#">Button Text</a>
               </p>
             </div>
           </div>
@@ -206,42 +226,41 @@
     </div>
   </section>
 
-  <section class="fdb-block">
+  <section class="fdb-block" data-type="cta">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 col-sm-3 text-center">
-          <a class="btn btn-primary" href="https://www.froala.com"><i class="fas fa-arrow-circle-down mr-2"></i> Download</a>
+          <a class="btn btn-primary" href="#">Button Text</a>
         </div>
 
         <div class="col-12 col-sm-9 text-center text-sm-right mt-4 mt-sm-0">
-          <h2>Use Froala Design Blocks for free in your project</h2>
+          <h2>Sem Potens Doming Doming est ante et modo habetis</h2>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block">
-    <img src="./imgs/alt_wide_2.svg" alt="Background Image" class="bg-image" />
+  <section class="fdb-block fdb-block-bg-wide-2">
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-10 col-md-8 col-lg-6 text-left">
-          <h1>Call to Action</h1>
+          <h2 class="h1">Call to Action</h2>
           <p class="lead">
             A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
           </p>
           <p class="mt-4">
-            <a class="btn btn-primary" href="https://www.froala.com">Download</a>
+            <a class="btn btn-primary" href="#">Button Text</a>
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block">
+  <section class="fdb-block" data-type="cta">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1>Froala Design Blocks</h1>
+          <h2 class="h1">Possim Poenis Signum</h2>
           <p class="lead">
             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
           </p>
@@ -250,177 +269,174 @@
 
       <div class="row justify-content-center align-items-center pt-5">
         <div class="col-8 col-sm-3">
-          <img alt="image" class="img-fluid" src="./imgs/img_square_2.svg" />
+          <img alt="image" class="img-fluid" src="http://via.placeholder.com/255" />
         </div>
         <div class="col-12 col-sm-6 m-auto pt-4 pt-sm-0">
-          <h2><strong>Bootstrap</strong></h2>
-          <p class="lead">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
+          <h2 class="h1"><strong>Velit</strong></h2>
+          <p class="lead">Pede dui sit-incantus Adipisci quo ab troiano netus qui zzril iusto ti at ad platea consequentibus elit.</p>
         </div>
         <div class="col-12 col-sm-3 text-center pt-4 pt-sm-0">
-          <p><a class="btn btn-outline-primary" href="https://www.froala.com">Take a Tour</a></p>
-          <p><a class="btn btn-primary" href="https://www.froala.com">Start Now</a></p>
-          <p class="h5"><em>Some foo text</em></p>
+          <p><a class="btn btn-outline-primary" href="#">Take a Tour</a></p>
+          <p><a class="btn btn-primary" href="#">Start Now</a></p>
+          <p class="h5"><em>Quam dis nisi</em></p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block">
+  <section class="fdb-block" data-type="cta">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h1>Froala Design Blocks</h1>
+          <h2 class="h1">Possim Poenis Signum</h2>
           <p class="h4">
-            Far far away, behind the word mountains, far from.
+            Non est pede, facere aut esse meritorum, leo eius
           </p>
         </div>
       </div>
 
       <div class="row align-items-center pt-2 pt-lg-5">
         <div class="col-12 col-md-8 col-lg-7">
-          <h2>Call to action</h2>
+          <h2 class="h1">Call to action</h2>
           <p class="lead">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-          <p class="mt-4"><a class="btn btn-outline-primary" href="https://www.froala.com">Take a Tour</a></p>
+          <p class="mt-4"><a class="btn btn-outline-primary" href="#">Take a Tour</a></p>
         </div>
 
         <div class="col-8 col-md-4 m-auto m-md-0 ml-md-auto pt-5">
-          <img alt="image" class="img-fluid" src="./imgs/img_square_1.svg" />
+          <img alt="image" class="img-fluid" src="http://via.placeholder.com/350" />
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block">
+  <section class="fdb-block" data-type="cta">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-10 col-sm-6 col-md-4 col-lg-3 m-auto m-md-0">
-          <img alt="image" class="img-fluid" src="./imgs/img_square_4.svg" />
+          <img alt="image" class="img-fluid" src="http://via.placeholder.com/255" />
         </div>
 
         <div class="col-12 col-md-8 ml-auto pt-5 pt-md-0">
-          <h2>Call to action</h2>
-          <p class="lead">On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
-          <p class="mt-4"><a class="btn btn-outline-primary" href="https://www.froala.com">Take a Tour</a></p>
+          <h2 class="h1">Call to action</h2>
+          <p class="lead">Ac sed cum non est a quam. Hac quas moreae est Filtru Clari Erat, lius eodem il pede quis ii nobis eros quam derelicta a posterum clari sed regulantur nisl cum ille quis tot itaque metus eu dis pede "eos" nam hic Licita Justo Amet sancta eget aureos eos operis id sit cum, quia kominem.</p>
+          <p class="mt-4"><a class="btn btn-outline-primary" href="#">Take a Tour</a></p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block text-white">
-    <img src="./imgs/bg_c_1.svg" alt="Background Image" class="bg-image" />
+  <section class="fdb-block fdb-block-bg-c1">    
     <div class="container align-items-center justify-content-center d-flex">
       <div class="row justify-content-center text-center">
-        <div class="col-12 col-md-10 col-lg-8">
-          <h1>Froala Design Blocks is Open Source and free to use in your apps</h1>
-          <p class="mt-5"><a href="https://www.froala.com" class="btn btn-light">Call to Action</a></p>
+        <div class="col-12 col-md-10 col-lg-8 text-light">
+          <h2 class="h1">Sapien Magnis Beatae te Modo Curae; nec diam id nam te unde cras</h2>
+          <p class="mt-5"><a href="#" class="btn btn-light">Call to Action</a></p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block bg-dark text-white">
-    <img src="./imgs/bg_0.svg" alt="Background Image" class="bg-image" />
+  <section class="fdb-block fdb-block-bg-dark-0">    
     <div class="container justify-content-center align-items-center d-flex">
       <div class="row justify-content-center text-center">
-        <div class="col-12 col-md-8">
-          <img alt="image" height="60" src="./imgs/img_round.svg" class="mb-4" />
-          <h1>Froala Design Blocks</h1>
+        <div class="col-12 col-md-8 text-light">
+          <img alt="image" height="60" src="http://via.placeholder.com/60" class="mb-4" />
+          <h2 class="h1">Possim Poenis Signum</h2>
           <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          <p class="mt-5"><a href="https://www.froala.com" class="btn btn-outline-light"><i class="far fa-thumbs-up mr-2"></i> Call to Action</a></p>
+          <p class="mt-5"><a href="#" class="btn btn-outline-light">Call to Action</a></p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block pb-0">
+  <section class="fdb-block" class="fdb-block pb-0">
     <div class="container align-items-end justify-content-center d-flex">
       <div class="row align-items-top text-left">
         <div class="col-12 col-md-6 col-lg-5">
-          <p class="mb-5 mt-5"><img alt="image" height="40" src="./imgs/img_logo.png" /></p>
-          <h1>Design Blocks</h1>
-          <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-          <p class="mt-4"><a href="https://www.froala.com" class="btn btn-outline-primary">Call to Action</a></p>
+          <p class="mb-5 mt-5"><img alt="image" height="40" src="http://via.placeholder.com/400x40" /></p>
+          <h2 class="h1">Exerci Dextre</h2>
+          <p class="lead">Nec est esse, caedis est arcu sollemnes, aut eius dui penatibus Timorem mus Emolumentum, metus sint dui iusto nulla. Protegere ante lius et Deliberationes totam et est fusce si qui Modestius, a omnis absentem massa.</p>
+          <p class="mt-4"><a href="#" class="btn btn-outline-primary">Call to Action</a></p>
         </div>
 
         <div class="col-12 col-sm-4 col-md-6 col-lg-4 m-auto pt-5">
-          <img alt="image" class="img-fluid rounded-0" src="./imgs/img_tall.png" />
+          <img alt="image" class="img-fluid rounded-0" src="http://via.placeholder.com/350x525" />
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block">
+  <section class="fdb-block" data-type="cta">
     <div class="container align-items-center justify-content-center d-flex">
       <div class="row align-items-center text-left">
         <div class="col-12 col-sm-6">
-          <img alt="image" class="img-fluid" src="./imgs/colors_wide_1.jpg" />
+          <img alt="image" class="img-fluid" src="http://via.placeholder.com/540x377" />
         </div>
 
         <div class="col-12 col-lg-5 ml-auto pt-5 pt-lg-0">
-          <h1>Froala Design Blocks</h1>
+          <h2 class="h1">Possim Poenis Signum</h2>
           <p class="lead">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-          <p class="mt-4"><a href="https://www.froala.com" class="btn btn-outline-primary">Call to Action</a></p>
+          <p class="mt-4"><a href="#" class="btn btn-outline-primary">Call to Action</a></p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block pb-0">
+  <section class="fdb-block" class="fdb-block pb-0">
     <div class="container">
       <div class="row align-items-center text-left">
         <div class="col-12 col-md-8">
-          <h1>Froala Design Blocks</h1>
+          <h2 class="h1">Possim Poenis Signum</h2>
           <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
         </div>
         <div class="col-12 col-md-3 ml-auto text-left text-md-right">
-          <p><a href="https://www.froala.com" class="btn btn-outline-primary">Call to Action</a></p>
+          <p><a href="#" class="btn btn-outline-primary">Call to Action</a></p>
         </div>
       </div>
 
       <div class="row pt-5">
         <div class="col-12">
-          <img alt="image" class="img-fluid" src="./imgs/img_very_wide.svg" />
+          <img alt="image" class="img-fluid" src="http://via.placeholder.com/1110x370" />
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block">
-    <img src="./imgs/alt_wide_1.svg" alt="Background Image" class="bg-image" />
+  <section class="fdb-block fdb-block-bg-wide-2">
     <div class="container align-items-center justify-content-center d-flex">
       <div class="row align-items-center text-left">
         <div class="col-12 col-sm-10 col-md-8 col-lg-6">
-          <h1>Froala Design Blocks is build on Boostrap Framework</h1>
+          <h2 class="h1">Claram Omnium Asylum ut etiam me Auctores Congressu</h2>
           <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there.</p>
           <p class="mt-5">
-            <a href="https://www.froala.com" class="btn btn-primary shadow">Call to Action</a>
-            <a href="https://www.froala.com" class="btn btn-light shadow ml-4">Button</a>
+            <a href="#" class="btn btn-primary shadow">Call to Action</a>
+            <a href="#" class="btn btn-light shadow ml-4">Button</a>
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="fdb-block">
+  <section class="fdb-block" data-type="cta">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-5 text-center pb-md-5">
-          <h1>Froala Design Blocks</h1>
+          <h2 class="h1">Possim Poenis Signum</h2>
           <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-          <p class="mt-4"><a href="https://www.froala.com" class="btn btn-outline-primary">Call to Action</a></p>
+          <p class="mt-4"><a href="#" class="btn btn-outline-primary">Call to Action</a></p>
         </div>
       </div>
 
       <div class="row text-center justify-content-center pt-5">
         <div class="col-12 col-sm-6 col-lg-3">
-          <img alt="image" height="60" src="./imgs/img_round.svg" class="mb-4" />
+          <img alt="image" height="60" src="http://via.placeholder.com/60" class="mb-4" />
 
           <h3><strong>Feature One</strong></h3>
 
           <p>Far far away, behind the word mountains, far from the countries</p>
         </div>
         <div class="col-12 col-sm-6 col-lg-3 pt-4 pt-sm-0">
-          <img alt="image" height="60" src="./imgs/img_round.svg" class="mb-4" />
+          <img alt="image" height="60" src="http://via.placeholder.com/60" class="mb-4" />
 
           <h3><strong>Feature Two</strong></h3>
 
@@ -428,7 +444,7 @@
         </div>
 
         <div class="col-12 col-sm-6 col-lg-3 pt-4 pt-lg-0">
-          <img alt="image" height="60" src="./imgs/img_round.svg" class="mb-4" />
+          <img alt="image" height="60" src="http://via.placeholder.com/60" class="mb-4" />
 
           <h3><strong>Feature Three</strong></h3>
 
@@ -436,7 +452,7 @@
         </div>
 
         <div class="col-12 col-sm-6 col-lg-3 pt-4 pt-lg-0">
-          <img alt="image" height="60" src="./imgs/img_round.svg" class="mb-4" />
+          <img alt="image" height="60" src="http://via.placeholder.com/60" class="mb-4" />
 
           <h3><strong>Feature Four</strong></h3>
 
